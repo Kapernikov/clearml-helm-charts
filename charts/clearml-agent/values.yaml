@@ -57,9 +57,6 @@ agentk8sglue:
   # -- Glue Agent number of pods
   replicaCount: 1
 
-  # -- kubernetes runtime class name
-  runtimeClassName: ""
-
   # -- Glue Agent pod resources
   resources: {}
 
@@ -162,6 +159,10 @@ agentk8sglue:
       #    - -c
       #    - >
       #      /bin/echo "this is an init";
+
+    # -- kubernetes runtime class name
+    runtimeClassName: ""
+
     # -- schedulerName setup for pods spawned to consume ClearML Task
     schedulerName: ""
     # -- volumes definition for pods spawned to consume ClearML Task (example in values.yaml comments)
